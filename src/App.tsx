@@ -7,9 +7,11 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
+
+import viteLogo from "../../../../../vite.svg";
+
 import reactLogo from "./assets/react.svg";
 import theme from "./utils/theme";
-import viteLogo from "/vite.svg";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -39,7 +41,7 @@ function App() {
 
         <Button
           variant="contained"
-          onClick={() => setCount((count) => count + 1)}
+          onClick={() => setCount((prev) => prev + 1)}
         >
           count is {count}
         </Button>
