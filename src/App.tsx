@@ -1,17 +1,13 @@
 import {
   Button,
   CssBaseline,
-  Link,
   Stack,
   ThemeProvider,
   Typography,
 } from "@mui/material";
 import { useState } from "react";
 
-import viteLogo from "../../../../../vite.svg";
-
-import reactLogo from "./assets/react.svg";
-import theme from "./utils/theme";
+import theme from "@/utils/theme";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,14 +23,6 @@ function App() {
         justifyContent="center"
         alignItems="center"
       >
-        <Stack direction="row" spacing={1}>
-          <Link href="https://vitejs.dev" target="_blank">
-            <img src={viteLogo} alt="Vite logo" />
-          </Link>
-          <Link href="https://react.dev" target="_blank">
-            <img src={reactLogo} alt="React logo" />
-          </Link>
-        </Stack>
         <Typography variant="h4">
           Vite + React + Material UI v5 + TypeScript
         </Typography>

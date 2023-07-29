@@ -17,5 +17,6 @@ module.exports = {
     ],
     // react must be in scope when using jsx
     "react/react-in-jsx-scope": "off",
+    "import/extensions": "off",
   },
 };
